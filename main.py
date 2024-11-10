@@ -12,3 +12,5 @@ if response.status_code == 200:
     print("API key works:", response.json())
 else:
     print("Error:", response.status_code, response.json())
+
+#Testing changes
