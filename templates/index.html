@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo">
+            <h1>Weather App</h1>
+        </a>
+    </nav>
+
+    <main class="container">
+        <section id="weather-search">
+            <form method="post">
+                <input type="text" class="text-box" name="city" placeholder="Enter City" required>
+                <button type="submit" class="btn">Get Weather</button>
+            </form>
+        </section>
+
+        {% if temperature is not none %}
+        <section id="weather-results">
+            <div class="weather-details">
+                <div class="weather-card temperature">
+                    <h3>Temperature</h3>
+                    <p>{{temperature}} &deg;F</p>
+                </div>
+                <div class="weather-card humidity">
+                    <h3>Humidity</h3>
+                    <p>{{humidity}} %</p>
+                </div>
+                <div class="weather-card wind">
+                    <h3>Wind Speed</h3>
+                    <p>{{wind}} mi/h</p>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+    </main>
+</body>
+</html>
