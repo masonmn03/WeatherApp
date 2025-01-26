@@ -22,8 +22,9 @@ def index():
         
         humidity = data['main']['humidity']
         wind = data['wind']['speed']
+        wind_mph = f"{wind * 2.23694:.2f}"
 
-        return render_template('index.html', temperature=temperature, humidity=humidity, wind=wind)
+        return render_template('index.html', temperature=temperature, humidity=humidity, wind=wind_mph)
     else:
         return render_template('index.html')
 
