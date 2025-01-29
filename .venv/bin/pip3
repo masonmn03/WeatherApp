@@ -1,4 +1,4 @@
-#!/Users/user/Documents/coding_projects/WeatherApp/.venv/bin/python
+#!/Users/user/coding_projects/WeatherApp/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
