@@ -1,26 +1,24 @@
 # Weather App
 
 ## Overview
-This Weather App is a simple web application built with Flask that fetches real-time weather data using the OpenWeatherMap API. Users can enter a city name, and the app will display the current temperature, humidity, and wind speed in a visually appealing interface.
+This Weather App is a simple web application built with Flask that fetches real-time weather data using the OpenWeatherMap API. Users can enter a city name, and the app will display the current temperature, humidity, and wind speed.
 
 ## Features
 - Fetches real-time weather data based on user input.
 - Displays temperature (in Fahrenheit), humidity, and wind speed.
 - User-friendly UI with a modern, responsive design.
-- Error handling for invalid city names.
 
 ## Technologies Used
 - **Backend:** Flask (Python)
 - **Frontend:** HTML, CSS
 - **API:** OpenWeatherMap
-- **Styling:** DM Sans font, CSS animations, and Glassmorphism effect
 
 ## Installation & Setup
 ### Prerequisites
 - Python 3.x installed
 - Flask installed (`pip install flask`)
 - Requests library installed (`pip install requests`)
-- OpenWeatherMap API key (sign up at [OpenWeatherMap](https://openweathermap.org/) and get your API key)
+- OpenWeatherMap API key
 
 ### Steps
 1. Clone the repository:
@@ -54,11 +52,7 @@ This Weather App is a simple web application built with Flask that fetches real-
 3. View the temperature, humidity, and wind speed.
 
 ## Future Improvements
-- Add weather icons and descriptions.
+- Add weather icons and more descriptions.
 - Display a 5-day weather forecast.
-- Implement geolocation to get weather based on the user's location.
 - Improve UI with additional styling and animations.
-
-## License
-This project is open-source and available under the [MIT License](LICENSE).
-
+- Add error-handling to smoothly take in invalid inputs.
